@@ -80,3 +80,6 @@ class GoldFish2 extends Animal{
     public void swim() {}
 }
 
+class Student {
+
+}

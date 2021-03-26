@@ -79,7 +79,3 @@ class GoldFish2 extends Animal{
     String fin;
     public void swim() {}
 }
-
-class Student {
-
-}

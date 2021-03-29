@@ -1,6 +1,7 @@
-package hi_choi.basic.day09;
+package hi_choi.basic.day10;
 
 public class StarCraft2 {
+    // 인터페이스 기반으로 스타크래프트의 유닛을 정의
     public static void main(String[] args) {
 
         SCV2 s = new SCV2();
@@ -21,11 +22,13 @@ public class StarCraft2 {
     }
 }
 
+// 추상클래스에서 정의했던 추상메서드를 
+// 독립적인 클래스로 분리함 -> 인터페이스
 
-interface Unit2Interface {
+interface Unit2Action {
 
-    void attack();
-    void move();
+    abstract public void attack();
+    void move();  // abstract public은 생략 가능
     void specialAbility();
 }
 
@@ -38,7 +41,7 @@ class Unit2{
     int gas;
 }
 
-class SCV2 extends Unit2 implements Unit2Interface {
+class SCV2 extends Unit2 implements Unit2Action {
 
     public SCV2() {
         name = "건설로봇";
@@ -71,7 +74,7 @@ class SCV2 extends Unit2 implements Unit2Interface {
     }
 }
 
-class Marine2 extends Unit2 implements Unit2Interface {
+class Marine2 extends Unit2 implements Unit2Action {
 
     public Marine2() {
         name = "해병대";
@@ -103,7 +106,7 @@ class Marine2 extends Unit2 implements Unit2Interface {
     }
 }
 
-class Firebat2 extends Unit2 implements Unit2Interface{
+class Firebat2 extends Unit2 implements Unit2Action{
 
     final String fmtattack = "화염방사기를 이용해서 대상에 %d의 피해를 주고있습니다.\n";
     final String fmtmove = "지정한 위치로 %.2f속도로 이동중입니다.\n";

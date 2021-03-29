@@ -1,15 +1,22 @@
 package hi_choi.basic.sungjuk;
 
 public class SungJukVO {
-    private String name;
-    private int kor;
-    private int eng;
-    private int mat;
-    private int tot;
-    private double avg;
-    private char grd;
+    protected String name;
+    protected int kor;
+    protected int eng;
+    protected int mat;
+    protected int tot;
+    protected double avg;
+    protected char grd;
 
     public SungJukVO(String name, int kor, int eng, int mat, int tot, double avg, char grd) {
+        this.name = name;
+        this.kor = kor;
+        this.eng = eng;
+        this.mat = mat;
+    }
+
+    public SungJukVO(String name, int kor, int eng, int mat) {
         this.name = name;
         this.kor = kor;
         this.eng = eng;

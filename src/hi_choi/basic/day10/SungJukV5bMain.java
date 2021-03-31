@@ -11,5 +11,7 @@ public class SungJukV5bMain {
         SungJukVO sj = sjsrv.readSungJuk();
         sjsrv.computeSungJuk(sj);
         sjsrv.printSungJuk(sj);
+
+        System.out.println(sj.toString());
     }
 }

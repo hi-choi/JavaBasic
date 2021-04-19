@@ -67,8 +67,8 @@ public class Looop {
 		// 단, 가우스 덧셈공식을 이용하세요.
 		i = 1;
 		j = 99;
-		sum = (j + i) * (j / 2) + (j % 2 == 1 ? (j + i) / 2 : 0);
-		//sum = (i + j) * (j - i + 1 ) / 2;
+		//sum = (j + i) * (j / 2) + (j % 2 == 1 ? (j + i) / 2 : 0);
+		sum = (i + j) * (j - i + 1 ) / 2;
 		System.out.println(sum);
 	}
 

@@ -63,6 +63,8 @@ public class SungJukServiceV2Impl implements SungJukServiceV2{
             sjdata.add(sj);
             // 처리된 성적데이터를 동적배열에 저장
 
+        }catch(NumberFormatException e){
+
         }catch(Exception ex){
             System.out.println("잘못입력하셨습니다!");
             return; // 오류발생시 실행중단하고 main으로 복귀

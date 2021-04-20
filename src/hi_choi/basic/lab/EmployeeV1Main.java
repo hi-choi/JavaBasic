@@ -8,14 +8,10 @@ public class EmployeeV1Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         EmployeeService eps = EmployeeServiceImpl.getInstance();
-        
-
-        String menu ="";
-        EmployeeVO ep = null;
 
         while(true){
             eps.displayMenu();
-            menu = sc.next();
+            String menu = sc.next();
 
             switch(menu)
             {

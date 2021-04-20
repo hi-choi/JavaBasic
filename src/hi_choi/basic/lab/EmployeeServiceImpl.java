@@ -13,6 +13,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     List<EmployeeVO> edata = new ArrayList<>();
     EmployeeVO ep = null;
 
+
     // 단일 상수 선언
     static final String JOBID[] = {"AD_PRES","AD_VP","AD_ASST","FI_MSG","FI_ACCOUNT", "AC_MGR", "AC_ACCOUNT",
             "SA_MAN", "SA_REP", "PU_MAN", "PU_CLERK", "ST_MAN", "ST_CLERK","SH_CLERK","IT_PROG","MK_MAN",
